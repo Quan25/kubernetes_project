@@ -1,5 +1,5 @@
 # kubernetes_project
-This project uses the following techniques
+This project uses the following techniques and runs on Google Kubernetes Engine
 
 Techniques           | Usage
 -------------------- | ---------------------
@@ -10,14 +10,12 @@ Ingress              | to expose both applications under same domain but differe
 ConfigMaps           | to store MongoDB service address, in case MongoDB is down and restarts with a different service address, and with ConfigMaps, we don't need to build the docker image again with the new address
  ---
 #### Pod 1: student records ####
-Node.js webserver that allows users to access certain student record from given student_id.
+- Node.js webserver that allows users to access certain student record from given student_id.
 #### Pod 2: bookstore ####
-MongoDB + Python Flask Web Framework + REST API + GKE
- ---
- ---
- ----
+- MongoDB + Python Flask Web Framework + REST API to allow users to perform standard List, Insert, Update, Delete operation to the data stored inside MongoDB
 
-curl cs571.project.com/studentserver/api/score?student_id=11111
-Pod 2: bookstore
-curl cs571.project.com/bookshelf/books
-ConfigMaps ----
+#### How to run ####
+<details>
+ <summary>Below is the document with detailed instruction</summary>
+ <p>Content 1 Content 1 Content 1 Content 1 Content 1</p>
+</details>
