@@ -17,5 +17,31 @@ ConfigMaps           | to store MongoDB service address, in case MongoDB is down
 #### How to run ####
 <details>
 <summary>Below is the document with detailed instruction</summary>
-[Instruction](https://github.com/Quan25/kubernetes_project/blob/master/CS571_Signature_Project_Quan_Zhou.pdf "Instruction")
+<a href="https://github.com/Quan25/kubernetes_project/blob/master/CS571_Signature_Project_Quan_Zhou.pdf"> document</a>
 </details>
+
+#### Sample Output ####
+
+- Access a student's score
+```
+curl cs571.project.com/studentserver/api/score?student_id=11111
+```
+
+- List all the books
+```curl cs571.project.com/bookshelf/books```
+
+
+- Add a book
+```curl -X POST -d "{\"book_name\": \"cloud computing\",\"book_author\": \"unkown\", \"isbn\": \"123456\" }" http://cs571.project.com/bookshelf/book```
+
+
+
+
+- Update a book
+```curl -X PUT -d "{\"book_name\": \"123\",\"book_author\": \"test\", \"isbn\": \"123updated\" }" http://cs571.project.com/bookshelf/book/id```
+
+
+
+
+- Delete a book
+```curl -X DELETE cs571.project.com/bookshelf/book/id```
