@@ -26,22 +26,32 @@ ConfigMaps           | to store MongoDB service address, in case MongoDB is down
 ```
 curl cs571.project.com/studentserver/api/score?student_id=11111
 ```
+![picture alt](https://github.com/Quan25/kubernetes_project/blob/master/output/proj_1.png)
+
 
 - List all the books
-```curl cs571.project.com/bookshelf/books```
+```
+curl cs571.project.com/bookshelf/books
+```
 
 
 - Add a book
-```curl -X POST -d "{\"book_name\": \"cloud computing\",\"book_author\": \"unkown\", \"isbn\": \"123456\" }" http://cs571.project.com/bookshelf/book```
+```
+curl -X POST -d "{\"book_name\": \"cloud computing\",\"book_author\": \"unkown\", \"isbn\": \"123456\" }" http://cs571.project.com/bookshelf/book
+```
 
 
 
 
 - Update a book
-```curl -X PUT -d "{\"book_name\": \"123\",\"book_author\": \"test\", \"isbn\": \"123updated\" }" http://cs571.project.com/bookshelf/book/id```
+```
+curl -X PUT -d "{\"book_name\": \"123\",\"book_author\": \"test\", \"isbn\": \"123updated\" }" http://cs571.project.com/bookshelf/book/id
+```
 
 
 
 
 - Delete a book
-```curl -X DELETE cs571.project.com/bookshelf/book/id```
+```
+curl -X DELETE cs571.project.com/bookshelf/book/id
+```
