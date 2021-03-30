@@ -33,21 +33,23 @@ curl cs571.project.com/studentserver/api/score?student_id=11111
 ```
 curl cs571.project.com/bookshelf/books
 ```
-
+![picture alt](https://github.com/Quan25/kubernetes_project/blob/master/output/proj_2.png)
 
 - Add a book
 ```
 curl -X POST -d "{\"book_name\": \"cloud computing\",\"book_author\": \"unkown\", \"isbn\": \"123456\" }" http://cs571.project.com/bookshelf/book
 ```
 
-
+![picture alt](https://github.com/Quan25/kubernetes_project/blob/master/output/proj_3.png)
+![picture alt](https://github.com/Quan25/kubernetes_project/blob/master/output/proj_4.png)
 
 
 - Update a book
 ```
 curl -X PUT -d "{\"book_name\": \"123\",\"book_author\": \"test\", \"isbn\": \"123updated\" }" http://cs571.project.com/bookshelf/book/id
 ```
-
+![picture alt](https://github.com/Quan25/kubernetes_project/blob/master/output/proj_5.png)
+![picture alt](https://github.com/Quan25/kubernetes_project/blob/master/output/proj_6.png)
 
 
 
@@ -55,3 +57,5 @@ curl -X PUT -d "{\"book_name\": \"123\",\"book_author\": \"test\", \"isbn\": \"1
 ```
 curl -X DELETE cs571.project.com/bookshelf/book/id
 ```
+![picture alt](https://github.com/Quan25/kubernetes_project/blob/master/output/proj_7.png)
+![picture alt](https://github.com/Quan25/kubernetes_project/blob/master/output/proj_8.png)
