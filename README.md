@@ -20,6 +20,11 @@ ConfigMaps           | to store MongoDB service address, in case MongoDB is down
 <a href="https://github.com/Quan25/kubernetes_project/blob/master/CS571_Signature_Project_Quan_Zhou.pdf"> document</a>
 </details>
 
+<details>
+<summary>Below is the Google slides with more details of the project</summary>
+<a href="https://docs.google.com/presentation/d/1HY--OKdWyqeGGbCu86WIvN3IR5lk0gwg-ZBnwmgcpCM/edit?usp=sharing"> document</a>
+</details>
+
 #### Sample Output ####
 
 - Access a student's score
